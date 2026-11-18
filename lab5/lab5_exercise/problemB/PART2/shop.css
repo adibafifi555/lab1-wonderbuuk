@@ -1,0 +1,135 @@
+
+/* ---------- General page style ---------- */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+/* ---------- Header with background image ---------- */
+header {
+    background-image: url("bookstore.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Header title */
+header h1 {
+    font-family: 'Merriweather', serif;
+    margin: 0;
+	padding: 8px 20px;
+	 display: inline-block;
+	  border-radius: 6px;
+}
+
+/* Header paragraph */
+header p {
+    margin-top: 10px;
+}
+
+/* ---------- Navigation bar ---------- */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Navigation list */
+nav li {
+    float: left;
+}
+
+/* Navigation links */
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 18px;
+    text-decoration: none;
+}
+
+/* Hover effect */
+nav li a:hover:not(.active) {
+    background-color: #111;
+}
+
+/* Active Home link */
+nav li a.active {
+    background-color: #04AA6D;
+}
+
+/* ---------- Main content area ---------- */
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 10px 0 30px;
+}
+
+/* Heading style */
+h2 {
+    font-family: 'Merriweather', serif;
+}
+
+/* ---------- Product table ---------- */
+#products {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* Table borders and spacing */
+#products td,
+#products th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+/* Grey colour on every even row */
+#products tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Hover effect on rows */
+#products tr:hover {
+    background-color: #ddd;
+}
+
+/* Table header style */
+#products th {
+    background-color: #04AA6D;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+/* Price column aligned to the right */
+#products td.price {
+    text-align: right;
+}
+
+/* ---------- Footer ---------- */
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+}
+
+/* ---------- Smaller screens ---------- */
+@media screen and (max-width: 600px) {
+    nav li {
+        float: none;
+    }
+
+    main {
+        width: 95%;
+    }
+}

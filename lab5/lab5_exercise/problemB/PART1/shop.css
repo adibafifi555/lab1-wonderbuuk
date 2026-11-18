@@ -1,0 +1,51 @@
+/* ---------- Main content area ---------- */
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 10px 0 30px;
+}
+
+/* ---------- Product table ---------- */
+#products {
+    border-collapse: collapse;              /* Error 11 fixed: collapsed -> collapse */
+    width: 100%;
+}
+
+#products td,
+#products th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+/* grey colour on every even row */
+#products tr:nth-child(even) {               /* Error 12 fixed: nth-child(2) -> nth-child(even) */
+    background-color: #f2f2f2;
+}
+
+/* hover effect on rows */
+#products tr:hover {                         /* Error 13 fixed: ":hovered" -> ":hover" */
+    background-color: #ddd;
+}
+
+/* table header: green, uppercase, centred, extra padding */
+#products th {
+    background-color: #04AA6D;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+/* price column aligned to the right */
+#products td.price {
+    text-align: right;
+}
+
+/* ---------- Footer ---------- */
+footer {
+    background-color: #f1f1f1;                   /* Error 14 fixed: added missing semicolon */
+    text-align: center;
+    padding: 10px;
+}
